@@ -18,5 +18,41 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+ 
+ 
+}
+/*cards*/
+.card{
+  background-color: #080808;
+  border-radius: 20px;
+}
+.card-body{
+  background-color: #080808;
+}
+.btn{
+  background-color: red;
+  border: red;
+}
+#youtube{
+  background-color: red;
+}
+#youtube:hover{
+  background-color: rgb(180, 27, 27);
+}
+#discord{
+  background-color: #5865F2;
+
+}
+#discord:hover{
+  background-color: #1e30f7;
+}
+#X{
+  background-color:#191919;
+}
+#X:hover{
+  background-color:#141313;
+}
+.descripcion-index p{
+text-align: center;
+font-size: 25px;
 }

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Mi-Web-Personal-Individual.props" />
+</Project>
