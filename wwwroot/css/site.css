@@ -21,6 +21,7 @@ body {
  
  
 }
+
 /*cards*/
 .card{
   background-color: #080808;
@@ -30,7 +31,7 @@ body {
   background-color: #080808;
 }
 .btn{
-  background-color: red;
+
   border: red;
 }
 #youtube{
@@ -56,3 +57,9 @@ body {
 text-align: center;
 font-size: 25px;
 }
+/*btn-tema*/
+#btn-tema:hover
+{
+background-color: yellow;
+}
+

@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\Mi-Web-Personal-Individual.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\48386383\\Downloads\\Mi-Web-Personal-Individual\\wwwroot\\Images\\X.png",
+      "PackagePath": "staticwebassets\\Images\\X.png"
+    },
+    {
+      "Id": "C:\\Users\\48386383\\Downloads\\Mi-Web-Personal-Individual\\wwwroot\\Images\\discord.png",
+      "PackagePath": "staticwebassets\\Images\\discord.png"
+    },
+    {
       "Id": "C:\\Users\\48386383\\Downloads\\Mi-Web-Personal-Individual\\wwwroot\\Images\\youtube.png",
       "PackagePath": "staticwebassets\\Images\\youtube.png"
     },
