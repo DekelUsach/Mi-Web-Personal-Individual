@@ -17,9 +17,18 @@ html {
   min-height: 100%;
 }
 
+html, body {
+  height: 100%;
+}
 body {
- 
- 
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+footer {
+  background-color: #000000;
 }
 
 /*cards*/
