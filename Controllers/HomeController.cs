@@ -22,9 +22,14 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult Contacto(string Nombre, string Apellido, string Email, string Region )
+    public IActionResult Contacto( )
     {
-        ViewBag.nombre = ;
+        
+        return View();
+    }
+    public IActionResult GuardarContacto(string Nombre, string Apellido, string Email, string Region){
+        Usuarios nuevoUsuario = new Usuarios (Nombre, Apellido,Email, Region );
+        Contacto.IngresarUsuario()
         return View();
     }
 
