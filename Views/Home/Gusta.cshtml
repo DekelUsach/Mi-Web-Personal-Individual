@@ -1,36 +1,83 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+  ViewData["Title"] = "Privacy Policy";
 }
 <div class="text-center">
-    <h1 class="display-4">Cosas que me gustan</h1>
+  <h1 class="display-4">Cosas que me gustan</h1>
 </div>
+@{
+  int contador = 0;
+  foreach (var imagen in ViewBag.Imagenes)
+  {
+    contador++;
+    if (contador >= 1)
+    {
+      <div class="card mb-3">
+        <img src="@imagen" class="card-img-top" alt="..." style=>
+        <div class="card-body">
+          <h5 class="card-title">Programación</h5>
+          <p class="card-text">Me apasiona la programación porque me permite ser creativo y construir soluciones únicas desde
+            cero, transformando ideas en aplicaciones funcionales. Disfruto del desafío de resolver problemas complejos y la
+            satisfacción que conlleva encontrar soluciones efectivas. La constante evolución de la tecnología me motiva a
+            aprender continuamente y mejorar mis habilidades. Además, me encanta la posibilidad de tener un impacto positivo
+            en el mundo a través de mis proyectos, y valoro la autonomía y flexibilidad que esta disciplina ofrece. </p>
 
-<div class="card mb-3">
-  <img src="../Images/programacion.png" class="card-img-top" alt="..." style= >
-  <div class="card-body">
-    <h5 class="card-title">Programación</h5>
-    <p class="card-text">Me apasiona la programación porque me permite ser creativo y construir soluciones únicas desde cero, transformando ideas en aplicaciones funcionales. Disfruto del desafío de resolver problemas complejos y la satisfacción que conlleva encontrar soluciones efectivas. La constante evolución de la tecnología me motiva a aprender continuamente y mejorar mis habilidades. Además, me encanta la posibilidad de tener un impacto positivo en el mundo a través de mis proyectos, y valoro la autonomía y flexibilidad que esta disciplina ofrece.    </p>
-    
-  </div>
-</div>
-<div class="card mb-3">
-  <img src="../Images/deport.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Deporte</h5>
-    <p class="card-text">Me apasiona el deporte porque me permite mantenerme activo y saludable, además de ofrecerme la oportunidad de superarme constantemente. Disfruto el desafío físico y mental que conlleva, así como la camaradería y el trabajo en equipo. El deporte también me enseña disciplina, resiliencia y la importancia de fijar y alcanzar metas.</p>
-  </div>
-</div>
-<div class="card mb-3">
-  <img src="../Images/viajar.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Viajar</h5>
-    <p class="card-text">Me apasiona viajar porque me permite descubrir nuevas culturas, conocer personas interesantes y experimentar diferentes formas de vida. Disfruto la emoción de explorar lugares desconocidos, probar comidas exóticas y aprender sobre la historia y las tradiciones de cada destino. Viajar me abre la mente, me enriquece personalmente y me enseña a apreciar la diversidad del mundo.</p>
-  </div>
-</div>
-<div class="card mb-3">
-  <img src="../Images/musica.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">La musica</h5>
-    <p class="card-text">Me apasiona la música porque tiene el poder de expresar emociones y conectar a las personas de una manera única. Disfruto de la creatividad que implica componer y tocar instrumentos, así como la capacidad de la música para contar historias y evocar recuerdos. La música enriquece mi vida, me inspira y me proporciona un escape del día a día.</p>
-  </div>
-</div>
+        </div>
+      </div>
+    }
+    break;
+  }
+  contador = 0;
+  foreach (var imagen in ViewBag.Imagenes)
+  {
+    contador++;
+    if (contador == 2)
+    {
+      <div class="card mb-3">
+        <img src="@imagen" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Deporte</h5>
+          <p class="card-text">Me apasiona el deporte porque me permite mantenerme activo y saludable, además de ofrecerme la
+            oportunidad de superarme constantemente. Disfruto el desafío físico y mental que conlleva, así como la camaradería
+            y el trabajo en equipo. El deporte también me enseña disciplina, resiliencia y la importancia de fijar y alcanzar
+            metas.</p>
+        </div>
+      </div>
+    }
+  }
+  contador = 0;
+  foreach (var imagen in ViewBag.Imagenes)
+  {
+    contador++;
+    if (contador == 3)
+    {
+      <div class="card mb-3">
+        <img src="@imagen" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Viajar</h5>
+          <p class="card-text">Me apasiona viajar porque me permite descubrir nuevas culturas, conocer personas interesantes y
+            experimentar diferentes formas de vida. Disfruto la emoción de explorar lugares desconocidos, probar comidas
+            exóticas y aprender sobre la historia y las tradiciones de cada destino. Viajar me abre la mente, me enriquece
+            personalmente y me enseña a apreciar la diversidad del mundo.</p>
+        </div>
+      </div>
+    }
+  }
+  contador = 0;
+  foreach (var imagen in ViewBag.Imagenes)
+  {
+    contador++;
+    if (contador == 4)
+    {
+      <div class="card mb-3">
+        <img src="../Images/musica.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">La musica</h5>
+          <p class="card-text">Me apasiona la música porque tiene el poder de expresar emociones y conectar a las personas de
+            una manera única. Disfruto de la creatividad que implica componer y tocar instrumentos, así como la capacidad de
+            la música para contar historias y evocar recuerdos. La música enriquece mi vida, me inspira y me proporciona un
+            escape del día a día.</p>
+        </div>
+      </div>
+    }
+  }
+}

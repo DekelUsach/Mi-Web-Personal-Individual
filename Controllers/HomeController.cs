@@ -15,21 +15,27 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        
         return View();
     }
 
     public IActionResult Gusta()
-    {
+    { 
+        ViewBag.Imagenes = ContactoClase.Imagenes;
+        ViewBag.Titulos =ContactoClase.Titulos;
+        ViewBag.Texto = ContactoClase.Textos;
+        
         return View();
     }
     public IActionResult Contacto( )
     {
+      
         
         return View();
     }
     public IActionResult GuardarContacto(string Nombre, string Apellido, string Email, string Region){
-        Usuarios nuevoUsuario = new Usuarios (Nombre, Apellido,Email, Region );
-        Contacto.IngresarUsuario()
+       
+        
         return View();
     }
 
