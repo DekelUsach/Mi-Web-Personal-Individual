@@ -22,6 +22,11 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Contacto(string Nombre, string Apellido, string Email, string Region )
+    {
+        ViewBag.nombre = ;
+        return View();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

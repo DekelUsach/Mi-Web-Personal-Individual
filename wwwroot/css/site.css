@@ -32,12 +32,8 @@ footer {
 }
 
 /*cards*/
-.card{
-  background-color: #080808;
-  border-radius: 20px;
-}
-.card-body{
-  background-color: #080808;
+.display-4{
+  margin-top: 20px;
 }
 .btn{
 
@@ -72,3 +68,8 @@ font-size: 25px;
 background-color: yellow;
 }
 
+.boton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
